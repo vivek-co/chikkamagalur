@@ -1,0 +1,172 @@
+GIT ::
+
+Personal access tokens (classic) --- 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
+
+
+Version control tool --
+Version control tool is a tool which is used to keep a track of project related files and directory.
+
+2 types of version control tools
+a) distributed version control tool
+b) centralised version control tool
+
+
+Distributed and centralised version control tool ( git and SVN)?
+
+Distributed -git is a distributed version control tool. The whole repo will be in local repo if i want to go previous version of a code i can get it from local workspace itself.
+centralised -SVN is a centralised version control tool. The only the latest version of a code will be there in local workspace. If i required previous version of code then i need to check out from central repo.
+
+Distributed - Git has many advance feature's lie reset, fetch, stach 
+centralised --In case of SVN we dont have direct commands for all this
+
+
+ex for Distributed version control tool is GIT, BITBUCKET, GITLAB.
+ex for centralised version control tool  is SVN, CVS.
+
+
+
+GIT --
+
+GIt is a version control tool which is used to keep track of project related file and directory.
+
+
+GIT Architecture --
+
+It Consist of 3 stages
+1) workspace  - It is a place where we edit Project related file's
+2) Stagging area - It is an intermediate area where we save the changes
+3) GIT Local Repo or GIR Repo - Here version of files will be traced. After executing git commit command file's will be moved the local repo.
+
+Personal access tokens (classic) --- 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
+
+Git init  --- 
+Used to Create or initialize a git repo
+Syn : git init
+
+
+Git clone :
+
+It is used to copy a central or remote repo to the local workspace for the first time.
+
+syn : git clone https(url)
+
+
+git config --global user.name "vivek-co"
+It is used to configure the username 
+
+git config --global user.email "vivekco1998@gmail.com"
+It is used to configure the mail id of the user
+
+git status
+It is used to check weather the files or in workspace or staging area or in local repo
+syn : git status
+
+
+Git add ?
+
+It is used to move a file from workspace to the staging area
+
+git add filename [It will move specific file to staging area]
+
+Git add . [It will move all the modified files to the staging area ]
+
+
+Git commit ?
+It is used to move the files from staging area to the local git repo. It is used to save or commit the changes to the local repo
+syn : Git commit -m "commit message"
+
+git log :
+It is used to check the history of the repo.
+
+git log -3 ?
+it will history of the last three commits
+
+Git commit filename 
+It will display History of that files (Commits of that file)
+
+
+Branch :
+Is used for Parallel development, If two team's are working on the same piece of code then we will create a branch and integrate the changes by merging.
+
+git branch :
+
+It is used to display all branches (Active Branches)
+syn : git branch
+
+git branch -a :
+It is used to display all brances (Both active and inactive branches)
+
+git checkout branchname :
+It is used to swith to another Branch
+ex : git checkout dev
+or
+git checkout main
+
+
+git branch branchname :
+It will create a news branch from checkout branch.
+
+
+Git checkout -b branchname :
+
+It is used to create a new branch and switch to the newly created branch automatically
+
+
+git branch -d barnchname :
+It is used to delete the branch in local Repo
+
+git push origin --delete branchname :
+
+It is used to delete the branch in the central Repo
+
+Git push :
+It is used to copy the changes local repo to the central repo.
+syn : git push origin master (It will push all the changes to master branch) 
+
+git push origin --all :
+It is used to push all the changes from more than one branch of local repo to the respective branch in central repo.
+
+git merge :
+It is used to merge the changes from one branch to another branch.
+syn : git merge branchname.
+ex : I need to merge the changes from Dev to main branch?
+step 1: Make a changes in Dev1 branch
+step 2: we need to checkout main branch first - [git checkout main] 
+step 3: Merge the changes from Dev  [git merge Dev].
+
+
+Tag :
+tag is a name given to set of version's of files and dir. tag is easy to remember in the future. It indicates the milestone of a project
+
+Git tag  :
+list all the tags
+
+Git tag tagname :
+used to tag with the updated version.
+
+Git tag -d tagname :
+It is used to delete the tag locally
+
+git checkout tagname  :
+It is used to checkout the source code from specific tag
+
+git push origin tagname :
+
+It is used to push the tag to the remote repo
+
+git push --tags :
+It is used to more than one tag to the remote repo
+
+git push origin --delete tagname :
+
+It is used to delete the tag in the remote repo.
+
+git switch -c branchname :
+Changes will be saved to the new branch.
+
+Detached Head Mode :
+when your git repo is not on any branch but rather on a specific commit. This happens when you directly checkout from a commit or a tag. In this mode user can still make any changes and user can do commit and save to the new branch by using the below command
+git switch -c branchname 
+
+assignment :
+how do you create a empty commit ?
